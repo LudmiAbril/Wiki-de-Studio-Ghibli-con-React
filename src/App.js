@@ -13,12 +13,12 @@ function App() {
     <div className="min-h-svh flex flex-col">
       <Router className="bg-gray-900 p-2">
         <div className="flex justify-between items-center bg-slate-950 p-3 shadow-md shadow-gray">
-          <div className="flex items-center ml-3">
+          <Link className="flex items-center ml-3" to="/">
             <img src="isologo.png" width={30} alt="logo" />
             <h1 className="font-title text-center text-3xl ml-2 font-medium text-white">
               Ghibli Wiki
             </h1>
-          </div>
+          </Link>
 
           <nav className="pr-4">
             <ul className="flex gap-3 font-text">
