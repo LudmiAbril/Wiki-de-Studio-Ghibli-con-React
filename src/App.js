@@ -1,8 +1,8 @@
 import "./App.css";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { Locations } from "./components/Locations";
-import { Species } from "./components/species";
-import { Vehicles } from "./components/vehicles";
+import { Species } from "./components/Species";
+import { Vehicles } from "./components/Vehicles";
 import { FilmDetails } from "./components/filmDetails";
 import { Home } from "./components/Home";
 import Navbar from "./components/Navbar";

@@ -71,7 +71,7 @@ export function Locations() {
       l.name.toLowerCase().startsWith(searchText)
     );
     if (filteredData.length === 0) {
-      setMessage("No Locations found.")
+      setMessage("No locations found.")
     }
     setFilteredLoc(filteredData);
   };

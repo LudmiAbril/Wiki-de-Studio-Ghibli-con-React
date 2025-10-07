@@ -93,7 +93,7 @@ export function Characters() {
       character.name.toLowerCase().includes(searchText)
     );
     if (filteredData.length === 0) {
-      setMessage("No characters found");
+      setMessage("No characters found.");
     }
     setFilteredCharacters(filteredData);
   };

@@ -37,7 +37,7 @@ export function Films() {
       f.title.toLowerCase().includes(searchText)
     );
     if (filteredData.length === 0) {
-      setMessage("No films found");
+      setMessage("No films found.");
     }
     setFilteredFilms(filteredData);
   };
