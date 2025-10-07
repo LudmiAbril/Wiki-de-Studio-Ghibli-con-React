@@ -38,7 +38,6 @@ export function Characters() {
                 return "Unknown";
               }
             })();
-
             return { ...char, filmTitle, specieName };
           })
         );
