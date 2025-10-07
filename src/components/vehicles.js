@@ -5,11 +5,11 @@ import SearchIcon from "@mui/icons-material/Search";
 export function Vehicles() {
   const [vehicles, setVehicles] = useState([]);
   const [filteredVehicles, setFilteredVehicles] = useState([]);
+
   useEffect(() => {
     fetch("https://ghibliapi.vercel.app/vehicles")
       .then((response) => response.json())
-      .then((data) => {setVehicles(data); setFilteredVehicles(data)});
-    console.log(vehicles);
+      .then((data) => { setVehicles(data); setFilteredVehicles(data) });
   }, []);
 
   const GetMovieTitle = (row) => {
@@ -63,8 +63,10 @@ export function Vehicles() {
       name: "Length",
       selector: (row) => row.length + " m",
     },
-    { name: "Film", 
-    selector: (row) => GetMovieTitle(row) },
+    {
+      name: "Film",
+      selector: (row) => GetMovieTitle(row)
+    },
   ];
 
   const search = (event) => {
@@ -74,26 +76,26 @@ export function Vehicles() {
     );
     setFilteredVehicles(filteredData);
   };
-  
+
 
   return (
     <>
-     <div className="flex justify-between m-2">
-    <h2 className="font-title text-3xl">Vehicles</h2>
-    <div className="relative ">
-      <input
-        type="text"
-        className=" border-2 border-slate-300 rounded-lg p-1 w-80 focus:outline-none "
-        placeholder="Search by name..."
-        onChange={search}
-      />
-      <div className="absolute inset-y-0 right-0 flex items-center pr-2 rounded-l-md text-slate-400">
-        <SearchIcon />
+      <div className="flex justify-between m-2">
+        <h2 className="font-title text-3xl">Vehicles</h2>
+        <div className="relative ">
+          <input
+            type="text"
+            className=" border-2 border-slate-300 rounded-lg p-1 w-80 focus:outline-none "
+            placeholder="Search by name..."
+            onChange={search}
+          />
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 rounded-l-md text-slate-400">
+            <SearchIcon />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-      <DataTable columns={columns} data={filteredVehicles} className="fade-in"/>
+      <DataTable columns={columns} data={filteredVehicles} className="fade-in" />
     </>
   );
 }
