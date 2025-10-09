@@ -48,16 +48,16 @@ export function Films() {
 
   return (
     <div className="min-h-screen">
-      <div className="flex justify-between my-10 mx-[5rem]">
+      <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row text-center justify-between my-10 mx-[5rem]">
         <h2 className="font-title text-4xl">Films</h2>
         <div className="relative">
           <input
             type="text"
-            className=" border-2 border-slate-300 rounded-lg p-1 w-80 focus:outline-none "
+            className="border-2 border-slate-300 rounded-lg p-1 w-70 lg:w-80 focus:outline-none "
             placeholder="Search by name..."
             onChange={search}
           />
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 rounded-l-md text-slate-400">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-7 lg:pr-2 rounded-l-md text-slate-400">
             <SearchIcon />
           </div>
         </div>
