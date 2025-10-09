@@ -3,11 +3,11 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { Locations } from "./components/Locations";
 import { Species } from "./components/Species";
 import { Vehicles } from "./components/Vehicles";
-import { FilmDetails } from "./components/filmDetails";
 import { Home } from "./components/Home";
 import Navbar from "./components/Navbar";
 import { Films } from "./components/Films";
 import { Characters } from "./components/Characters";
+import { FilmDetails } from "./components/FilmDetails";
 
 function App() {
   return (
