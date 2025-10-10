@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Wiki-de-Studio-Ghibli-con-React/static/css/main.b1447b1c.css",
-    "main.js": "/Wiki-de-Studio-Ghibli-con-React/static/js/main.998f6bc8.js",
-    "static/js/496.7454ff85.chunk.js": "/Wiki-de-Studio-Ghibli-con-React/static/js/496.7454ff85.chunk.js",
+    "main.css": "/Wiki-de-Studio-Ghibli-con-React/static/css/main.ab54718b.css",
+    "main.js": "/Wiki-de-Studio-Ghibli-con-React/static/js/main.9a7603f0.js",
+    "static/media/isologo.png": "/Wiki-de-Studio-Ghibli-con-React/static/media/isologo.e2d86a8f9b260a56fe61.png",
+    "static/media/home-img.png": "/Wiki-de-Studio-Ghibli-con-React/static/media/home-img.1b99bddeb0fb8d5fe3b5.png",
     "index.html": "/Wiki-de-Studio-Ghibli-con-React/index.html",
-    "main.b1447b1c.css.map": "/Wiki-de-Studio-Ghibli-con-React/static/css/main.b1447b1c.css.map",
-    "main.998f6bc8.js.map": "/Wiki-de-Studio-Ghibli-con-React/static/js/main.998f6bc8.js.map",
-    "496.7454ff85.chunk.js.map": "/Wiki-de-Studio-Ghibli-con-React/static/js/496.7454ff85.chunk.js.map"
+    "main.ab54718b.css.map": "/Wiki-de-Studio-Ghibli-con-React/static/css/main.ab54718b.css.map",
+    "main.9a7603f0.js.map": "/Wiki-de-Studio-Ghibli-con-React/static/js/main.9a7603f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1447b1c.css",
-    "static/js/main.998f6bc8.js"
+    "static/css/main.ab54718b.css",
+    "static/js/main.9a7603f0.js"
   ]
 }
