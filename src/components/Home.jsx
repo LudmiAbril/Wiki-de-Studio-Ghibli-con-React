@@ -2,7 +2,7 @@ import logo from "../assets/home-img.png";
 
 export function Home() {
   return (
-    <div className="fade-in flex flex-col lg:flex-row items-center justify-center min-h-screen font-text">
+    <div className="fade-in flex flex-col lg:flex-row flex-grow items-center justify-center font-text">
       <img src={logo} alt="logo" className="w-full max-w-xs lg:max-w-md xl:max-w-lg mb-6 "
       />
       <div className="flex flex-col text-center items-center lg:text-left lg:items-start">

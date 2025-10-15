@@ -35,7 +35,7 @@ const Navbar = () => {
     ]
 
     return (
-        <header className="relative bg-slate-950 shadow-md shadow-gray z-50">
+        <header className="relative bg-slate-800 shadow-md shadow-gray z-50">
             <div className="flex justify-between items-center py-3 px-10 shadow-md shadow-gray">
                 <Link className="flex items-center gap-2" to="/">
                     <img src={isologo} width={30} alt="logo" />

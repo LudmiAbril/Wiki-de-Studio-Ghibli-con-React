@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import { Films } from "./components/Films";
 import { Characters } from "./components/Characters";
 import { FilmDetails } from "./components/FilmDetails";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,9 +25,7 @@ function App() {
           <Route path="/film/:id" element={<FilmDetails />} />
         </Routes>
       </Router>
-      <div className="mt-auto text-center bg-black text-slate-500 italic p-2">
-        <p>Ghibli Wiki - {new Date().getFullYear()}</p>
-      </div>
+      <Footer />
     </div>
   );
 }

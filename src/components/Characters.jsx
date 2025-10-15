@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import { SearchBar } from "./SearchBar";
+import { loadingStyles } from "../utils/utils";
 
 export function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -86,11 +87,11 @@ export function Characters() {
   ];
 
   if (loading) {
-    return <p className="text-center p-4">Loading characters...</p>;
+    return <p className={loadingStyles}>Loading characters...</p>;
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="flex-grow">
       <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row text-center justify-between my-10 mx-[5rem]">
         <h2 className="font-title text-4xl">Characters</h2>
         <SearchBar

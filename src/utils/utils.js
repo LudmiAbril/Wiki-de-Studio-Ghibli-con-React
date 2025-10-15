@@ -1,0 +1,1 @@
+export const loadingStyles = "flex-grow flex justify-center items-center text-center p-4";

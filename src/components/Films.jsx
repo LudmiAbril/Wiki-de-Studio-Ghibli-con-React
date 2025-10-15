@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import { SearchBar } from "./SearchBar";
+import { loadingStyles } from "../utils/utils";
 
 export function Films() {
   const [films, setFilms] = useState([]);
@@ -31,11 +32,11 @@ export function Films() {
   }, []);
 
   if (loading) {
-    return <p className="text-center p-4">Loading films...</p>;
+    return <p className={loadingStyles}>Loading films...</p>;
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="flex-grow">
       <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row text-center justify-between my-10 mx-[5rem]">
         <h2 className="font-title text-4xl">Films</h2>
         <SearchBar
