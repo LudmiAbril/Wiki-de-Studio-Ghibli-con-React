@@ -37,7 +37,7 @@ export function SearchBar({
         placeholder={placeholder}
         className="border-2 border-slate-300 rounded-lg p-1 w-70 lg:w-80 focus:outline-none"
       />
-      <div className="absolute inset-y-0 right-0 flex items-center pr-4 text-slate-400">
+      <div className="absolute inset-y-0 right-0 flex items-center pr-4 lg:pr-2 text-slate-400">
         <SearchIcon />
       </div>
     </div>
