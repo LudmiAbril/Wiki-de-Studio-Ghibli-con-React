@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Wiki-de-Studio-Ghibli-con-React/static/css/main.ab54718b.css",
-    "main.js": "/Wiki-de-Studio-Ghibli-con-React/static/js/main.9a7603f0.js",
+    "main.css": "/Wiki-de-Studio-Ghibli-con-React/static/css/main.aec8db51.css",
+    "main.js": "/Wiki-de-Studio-Ghibli-con-React/static/js/main.0119c6d5.js",
     "static/media/isologo.png": "/Wiki-de-Studio-Ghibli-con-React/static/media/isologo.e2d86a8f9b260a56fe61.png",
     "static/media/home-img.png": "/Wiki-de-Studio-Ghibli-con-React/static/media/home-img.1b99bddeb0fb8d5fe3b5.png",
     "index.html": "/Wiki-de-Studio-Ghibli-con-React/index.html",
-    "main.ab54718b.css.map": "/Wiki-de-Studio-Ghibli-con-React/static/css/main.ab54718b.css.map",
-    "main.9a7603f0.js.map": "/Wiki-de-Studio-Ghibli-con-React/static/js/main.9a7603f0.js.map"
+    "main.aec8db51.css.map": "/Wiki-de-Studio-Ghibli-con-React/static/css/main.aec8db51.css.map",
+    "main.0119c6d5.js.map": "/Wiki-de-Studio-Ghibli-con-React/static/js/main.0119c6d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab54718b.css",
-    "static/js/main.9a7603f0.js"
+    "static/css/main.aec8db51.css",
+    "static/js/main.0119c6d5.js"
   ]
 }
