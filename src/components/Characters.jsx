@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
-import SearchIcon from "@mui/icons-material/Search";
+import { SearchBar } from "./SearchBar";
 
 export function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -85,18 +85,6 @@ export function Characters() {
     },
   ];
 
-  const search = (event) => {
-    setMessage("");
-    const searchText = event.target.value.toLowerCase();
-    const filteredData = characters.filter((character) =>
-      character.name.toLowerCase().includes(searchText)
-    );
-    if (filteredData.length === 0) {
-      setMessage("No characters found.");
-    }
-    setFilteredCharacters(filteredData);
-  };
-
   if (loading) {
     return <p className="text-center p-4">Loading characters...</p>;
   }
@@ -105,17 +93,13 @@ export function Characters() {
     <div className="min-h-screen">
       <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row text-center justify-between my-10 mx-[5rem]">
         <h2 className="font-title text-4xl">Characters</h2>
-        <div className="relative ">
-          <input
-            type="text"
-            className="border-2 border-slate-300 rounded-lg p-1 w-70 lg:w-80 focus:outline-none"
-            placeholder="Search by name..."
-            onChange={search}
-          />
-          <div className="absolute inset-y-0 right-0 flex items-center pr-4 rounded-l-md text-slate-400">
-            <SearchIcon />
-          </div>
-        </div>
+        <SearchBar
+          data={characters}
+          setFilteredData={setFilteredCharacters}
+          setMessage={setMessage}
+          placeholder="Search by name..."
+          filterKey="name"
+        />
       </div>
       <div className="mx-10 lg:mx-[5rem]">
         <DataTable
