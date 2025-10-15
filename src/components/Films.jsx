@@ -53,11 +53,11 @@ export function Films() {
         <div className="relative">
           <input
             type="text"
-            className="border-2 border-slate-300 rounded-lg p-1 w-70 lg:w-80 focus:outline-none "
+            className="border-2 border-slate-300 rounded-lg p-1 w-70 lg:w-80 focus:outline-none"
             placeholder="Search by name..."
             onChange={search}
           />
-          <div className="absolute inset-y-0 right-0 flex items-center pr-7 lg:pr-2 rounded-l-md text-slate-400">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-4 rounded-l-md text-slate-400">
             <SearchIcon />
           </div>
         </div>
