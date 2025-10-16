@@ -36,8 +36,8 @@ const Navbar = () => {
 
     return (
         <header className="relative bg-slate-800 shadow-md shadow-gray z-50">
-            <div className="flex justify-between items-center py-3 px-10 shadow-md shadow-gray">
-                <Link className="flex items-center gap-2" to="/">
+            <div className="flex justify-between items-center py-3 mx-[5rem] shadow-md shadow-gray">
+                <Link className="flex items-center justify-between gap-2" to="/">
                     <img src={icon} width={30} alt="logo" />
                     <h1 className="font-title text-center text-3xl ml-2 font-medium text-white">
                         Ghibli Wiki
